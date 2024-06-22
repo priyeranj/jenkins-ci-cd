@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JenkinsCiCdApplication {
 
-	@GetMapping("greetings/{name}")
+	@GetMapping("/greetings/{name}")
 	public String greetings(String name){
 		return "Hello " +name +" Congratulations you for successfully completed Jenkins CI/CD demo !";
 	}
